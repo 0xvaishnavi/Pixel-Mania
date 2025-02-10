@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CAT Arena</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        canvas {
+            display: block;
+            margin: auto;
+            background-color: lightgray;
+        }
+
+        #restartButton{
+            border: 2px solid grey;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+            margin: 2%;
+            font-size: 14px;
+            background-color: green;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #quit{
+            border: 2px solid grey;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+            margin: 2%;
+            font-size: 14px;
+            background-color: brown;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>~ Pixel Mania ~</h1>
+    <h3>Your soldier is summoned</h3>
+    
+    <p>Refresh to load the game!</p>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <div>
+        <Button id="restartButton" onclick=resetGame()>Restart Game</Button>
+        <Button id="quit" onclick="window.exit()">Quit</Button>
+    </div>
+
+    <script src="catarena.js"></script>
+</body>
+</html>

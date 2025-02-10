@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Pixel Mania</title>
+</head>
+<style>
+    body {
+        background-color: rgb(246, 132, 196);
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(246, 132, 196);
+        padding: 20px;
+        margin-left: 50px;
+        flex-wrap: wrap;
+    }
+
+    .column:hover {
+        box-shadow: 2px 2px 2px rgb(222, 222, 222);
+    }
+
+    button {
+        border: 2px solid blue;
+        border-radius: 20px;
+        background-color: rgb(251, 247, 248);
+        color: rgb(245, 0, 139);
+        font-size: 18px;
+        font-display: bold;
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    button:hover {
+        box-shadow: 5px 5px 5px blue;
+    }
+
+    ul {
+        color: yellow;
+    }
+</style>
+
+<body>
+    <center>
+        <div>
+            <h3> Welcome to</h3>
+            <h1>Pixel Mania</h1>
+        </div>
+        <h2> Choose your soldier</h2>
+        <div class="row">
+
+            <div class="column">
+                <img src="frame_dog.png" width="300" height="300">
+                <a href="dogarena.html"><button>Doge - The Dawg </button></a>
+                <div>
+                    <list>
+                        <ul>Likes to Bark</ul>
+                        <ul>Loyal to its owner</ul>
+                        <ul>friendly (doesnt bite)</ul>
+                    </list>
+                </div>
+            </div>
+
+            <div class="column">
+                <img src="frame_cat.png" width="300" height="300">
+                <a href="catarena.html"><button> Meow - The Car</button>
+                </a>
+                <div>
+                    <list>
+                        <ul>Attacc</ul>
+                        <ul>humans are pets</ul>
+                        <ul>judges you often</ul>
+                    </list>
+                </div>
+            </div>
+        </div>
+
+    </center>
+</body>
+
+</html>
